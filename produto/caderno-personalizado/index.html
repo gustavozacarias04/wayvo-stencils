@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caderno de Stencils Personalizado · Wayvo Stencils</title>
+  <meta name="description" content="Stencils para bolos e bolachas, feitos com os teus desenhos.">
+  <meta name="theme-color" content="#fdf6ee">
+  <!-- Tipos de letra (Google Fonts). Antes de pôr online: alojar os ficheiros no próprio site (RGPD). -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,500..700,100,0;1,9..144,400..600,100,0&family=Nunito:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="/wayvo-stencils/static/css/loja.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/wayvo-stencils/static/img/marca/favicon-32.png">
+  <link rel="apple-touch-icon" href="/wayvo-stencils/static/img/marca/favicon.png">
+</head>
+<body class="">
+  <a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
+  <div class="demo-aviso">✨ Versão de demonstração — a loja ainda está a ser preparada e não aceita encomendas.</div>
+  <div class="anuncio">Portes grátis acima de 40,00 €<span class="anuncio__extra"><span aria-hidden="true">·</span> Feito por encomenda em Portugal</span></div>
+  <header class="topo">
+    <div class="largura topo__in">
+      <nav class="nav" aria-label="Principal">
+        <a href="/wayvo-stencils/produto/caderno-natal">Natal</a>
+        <a href="/wayvo-stencils/produto/caderno-personalizado">Personalizados</a>
+        <a href="/wayvo-stencils/#como-funciona">Como usar</a>
+      </nav>
+      <a class="logo" href="/wayvo-stencils/" aria-label="Wayvo Stencils — início">
+        <img src="/wayvo-stencils/static/img/marca/logo.svg" alt="Wayvo Stencils" width="150" height="48">
+      </a>
+      <div class="topo__dir">
+        <a class="nav-link" href="/wayvo-stencils/#perguntas">Ajuda</a>
+        <a class="carrinho-link" href="/wayvo-stencils/carrinho" aria-label="Carrinho">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" d="M5 8h14l-1.2 11.2a1.5 1.5 0 0 1-1.5 1.3H7.7a1.5 1.5 0 0 1-1.5-1.3L5 8Z"/><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" d="M9 10V6.5a3 3 0 0 1 6 0V10"/></svg>
+          <span>Carrinho</span>
+          <span class="carrinho-n" data-carrinho-n hidden>0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+<div class="largura produto" data-produto>
+  <nav class="migalhas" aria-label="Estás em"><a href="/wayvo-stencils/">Início</a> / <span>Caderno de Stencils Personalizado</span></nav>
+
+  <div class="produto__grid">
+    <!-- visualizador -->
+    <div class="visor">
+      <div class="visor__palco" data-palco style="--tinta: var(--chocolate)">
+        <img class="visor__img" data-visor-img src="/wayvo-stencils/static/img/produto-caderno.png" alt="Caderno de Stencils Personalizado">
+        <div class="visor__vazio" data-visor-vazio hidden>
+          <p>Carrega uma imagem para veres aqui o teu stencil.</p>
+        </div>
+        <div class="visor__a-processar" data-visor-loading hidden><span class="roda"></span> A recortar…</div>
+      </div>
+      <div class="visor__barra">
+        <span class="visor__legenda" data-visor-legenda>Exemplo</span>
+        <div class="tintas" role="radiogroup" aria-label="Ver com cobertura">
+          <span class="pequeno">Ver com:</span>
+          <button type="button" class="tinta is-on" style="--c:var(--chocolate)" data-tinta="var(--chocolate)" title="Cacau / chocolate" aria-label="Cacau" aria-pressed="true"></button>
+          <button type="button" class="tinta" style="--c:var(--morango)" data-tinta="var(--morango)" title="Glacé de morango" aria-label="Morango" aria-pressed="false"></button>
+          <button type="button" class="tinta" style="--c:var(--pistacio)" data-tinta="var(--pistacio)" title="Pistácio" aria-label="Pistácio" aria-pressed="false"></button>
+          <button type="button" class="tinta" style="--c:var(--caramelo)" data-tinta="var(--caramelo)" title="Caramelo / canela" aria-label="Caramelo" aria-pressed="false"></button>
+        </div>
+      </div>
+      <div class="folhas" data-folhas aria-label="Folhas do teu caderno"></div>
+      <p class="pequeno visor__info" data-visor-info></p>
+    </div>
+
+    <!-- formulário -->
+    <form class="config" data-form novalidate>
+      <h1>Caderno de Stencils Personalizado</h1>
+      <p class="config__preco" data-preco>19,90 €</p>
+      <ul class="lista-check"><li>Tamanho bolacha (desenho até ~12 × 8,5 cm) ou tamanho bolo (desenho até ~18 × 13 cm).</li><li>Ideal para pastelarias e cake designers: o teu logótipo em todas as bolachas.</li><li>Para açúcar em pó, cacau, glacé real, aerógrafo alimentar ou creme com espátula.</li><li>Folhas de 0,6 mm laváveis e reutilizáveis, num caderno de argolas com ranhuras abertas.</li><li>Antes de imprimir enviamos-te a pré-visualização para aprovares.</li></ul>
+
+      <fieldset class="campo">
+        <legend>Tamanho e quantidade</legend>
+        <div class="pilulas">
+          
+          <label class="pilula">
+            <input type="radio" name="variante" value="CAD-B06" checked>
+            <span>6 · Bolachas</span>
+          </label>
+          
+          <label class="pilula">
+            <input type="radio" name="variante" value="CAD-B12" >
+            <span>12 · Bolachas <em>Mais escolhido</em></span>
+          </label>
+          
+          <label class="pilula">
+            <input type="radio" name="variante" value="CAD-B18" >
+            <span>18 · Bolachas</span>
+          </label>
+          
+          <label class="pilula">
+            <input type="radio" name="variante" value="CAD-06" >
+            <span>6 · Bolos</span>
+          </label>
+          
+          <label class="pilula">
+            <input type="radio" name="variante" value="CAD-12" >
+            <span>12 · Bolos</span>
+          </label>
+          
+          <label class="pilula">
+            <input type="radio" name="variante" value="CAD-18" >
+            <span>18 · Bolos</span>
+          </label>
+          
+        </div>
+      </fieldset>
+
+      <fieldset class="campo">
+        <legend>Estilo do recorte</legend>
+        <div class="pilulas">
+          
+          <label class="pilula"><input type="radio" name="modo" value="linha" checked><span>Desenho de linha</span></label>
+          
+          <label class="pilula"><input type="radio" name="modo" value="silhueta" ><span>Silhueta</span></label>
+          
+          <label class="pilula"><input type="radio" name="modo" value="contorno" ><span>Foto (contornos)</span></label>
+          
+        </div>
+        <p class="ajuda" data-ajuda-modo></p>
+      </fieldset>
+
+      <fieldset class="campo">
+        <legend>As tuas imagens <span class="contador" data-contador></span></legend>
+        <p class="ajuda">Uma imagem por folha (JPG ou PNG, até 20 MB). Podes arrastar várias de uma vez. Desenhos simples, escuros sobre fundo branco, dão os melhores resultados.</p>
+        <div class="uploads" data-uploads></div>
+        <label class="botao botao--linha botao--pequeno varias">
+          <input type="file" accept="image/*" multiple data-varias hidden>
+          Escolher várias imagens
+        </label>
+      </fieldset>
+
+      
+      <div class="campo">
+        <label for="capa">Nome na capa <span class="pequeno">(opcional)</span></label>
+        <input id="capa" type="text" maxlength="14" autocomplete="off" placeholder="ex.: MARIA" data-capa>
+        <p class="ajuda">Até 14 letras, recortadas na capa.</p>
+      </div>
+      
+
+      <div class="campo">
+        <label for="notas">Notas <span class="pequeno">(opcional)</span></label>
+        <textarea id="notas" rows="2" maxlength="500" placeholder="ex.: logótipo com 6 cm de largura, para bolachas redondas de 7 cm" data-notas></textarea>
+      </div>
+
+      <label class="check">
+        <input type="checkbox" data-direitos>
+        <span>Confirmo que as imagens são minhas ou que tenho autorização para as usar.</span>
+      </label>
+
+      <p class="erro" data-erro role="alert" hidden></p>
+      <button type="submit" class="botao botao--grande botao--largo" data-adicionar>Adicionar ao carrinho</button>
+      <p class="ajuda centro">Produzido por encomenda · enviamos em 3 a 5 dias úteis após aprovares a pré-visualização.</p>
+    </form>
+  </div>
+</div>
+
+<script type="application/json" id="dados-produto">{"capa": true, "exemplo": "/wayvo-stencils/static/img/produto-caderno.png", "formato": "A6", "handle": "caderno-personalizado", "modos": {"contorno": "Foto (contornos)", "linha": "Desenho de linha", "silhueta": "Silhueta"}, "titulo": "Caderno de Stencils Personalizado", "variantes": [{"formato": "A6", "id": "CAD-B06", "preco": 19.9, "stencils": 6, "titulo": "6 \u00b7 Bolachas"}, {"destaque": "Mais escolhido", "formato": "A6", "id": "CAD-B12", "preco": 32.9, "stencils": 12, "titulo": "12 \u00b7 Bolachas"}, {"formato": "A6", "id": "CAD-B18", "preco": 44.9, "stencils": 18, "titulo": "18 \u00b7 Bolachas"}, {"formato": "A5", "id": "CAD-06", "preco": 24.9, "stencils": 6, "titulo": "6 \u00b7 Bolos"}, {"formato": "A5", "id": "CAD-12", "preco": 39.9, "stencils": 12, "titulo": "12 \u00b7 Bolos"}, {"formato": "A5", "id": "CAD-18", "preco": 54.9, "stencils": 18, "titulo": "18 \u00b7 Bolos"}]}</script>
+</main>
+
+  <footer class="rodape ondas ondas--so-topo">
+    <div class="largura">
+      <div class="rodape__grid">
+        <div class="rodape__marca">
+          <img class="rodape__logo" src="/wayvo-stencils/static/img/marca/logo-branco.svg" alt="Wayvo Stencils" width="170" height="54">
+          <p>Stencils para bolos e bolachas, desenhados e impressos por encomenda em Portugal.</p>
+        </div>
+        <div>
+          <h2 class="rodape__titulo">Loja</h2>
+          <ul>
+            <li><a href="/wayvo-stencils/produto/caderno-natal">Caderno de Natal</a></li>
+            <li><a href="/wayvo-stencils/produto/caderno-personalizado">Caderno personalizado</a></li>
+            <li><a href="/wayvo-stencils/produto/stencil-personalizado">Stencil avulso</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="rodape__titulo">Ajuda</h2>
+          <ul>
+            <li><a href="/wayvo-stencils/#como-funciona">Como usar</a></li>
+            <li><a href="/wayvo-stencils/#perguntas">Perguntas frequentes</a></li>
+            <li><a href="mailto:ola@exemplo.pt">ola@exemplo.pt</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="rodape__base">© 2026 Wayvo Stencils · Versão de demonstração.</p>
+    </div>
+  </footer>
+
+  <div class="aviso" role="status" aria-live="polite" data-aviso hidden></div>
+  <script>window.BASE = "/wayvo-stencils";</script>
+  <script src="/wayvo-stencils/static/js/demo.js"></script>
+  <script src="/wayvo-stencils/static/js/carrinho.js"></script>
+  <script src="/wayvo-stencils/static/js/produto.js"></script>
+</body>
+</html>
