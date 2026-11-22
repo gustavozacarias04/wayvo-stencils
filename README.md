@@ -1,6 +1,5 @@
-# Wayvo Stencils — demonstração
+# Wayvo Stencils
 
-Versão de demonstração da loja Wayvo Stencils (stencils para bolos e bolachas).
-A loja ainda não aceita encomendas.
+Site da loja Wayvo Stencils — stencils para bolos e bolachas: https://www.wayvostencils.store
 
 Gerado automaticamente — não editar à mão.

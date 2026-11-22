@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /carrinho/
+Disallow: /checkout/
+Disallow: /encomenda-enviada/
+Sitemap: https://www.wayvostencils.store/sitemap.xml

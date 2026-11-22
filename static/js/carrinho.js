@@ -168,7 +168,7 @@
       var itens = ler();
       var aside = document.querySelector('[data-resumo-checkout]');
       var form = document.querySelector('[data-checkout]');
-      if (!itens.length) { location.href = (window.BASE || '') + '/carrinho'; return; }
+      if (!itens.length) { location.href = (window.BASE || '') + '/carrinho/'; return; }
       var cfg = window.LOJA_CFG || {};
       var recolha = function () {
         var r = form.querySelector('input[name=entrega]:checked');

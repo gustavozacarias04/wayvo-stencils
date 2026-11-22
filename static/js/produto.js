@@ -275,7 +275,7 @@
     });
     var falta = v.stencils - prontos.length;
     Carrinho.aviso('Adicionado ao carrinho. ' + (falta > 0 ? 'As ' + falta + ' imagens em falta podes enviar depois pelo WhatsApp. ' : '') +
-      '<a href="' + (window.BASE || '') + '/carrinho">Ver carrinho</a>');
+      '<a href="' + (window.BASE || '') + '/carrinho/">Ver carrinho</a>');
   });
 
   // início
