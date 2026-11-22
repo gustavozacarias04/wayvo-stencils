@@ -87,7 +87,8 @@
         var mB = sB / wB, mF = (soma - sB) / wF, v = wB * wF * (mB - mF) * (mB - mF);
         if (v > melhor) { melhor = v; t = i; }
       }
-      for (i = 0; i < w * h; i++) corte[i] = lum[i] < t ? 1 : 0;
+      // a classe escura do Otsu inclui o próprio limiar (<=); com "<" as imagens só a preto e branco não recortavam nada
+      for (i = 0; i < w * h; i++) corte[i] = (lum[i] | 0) <= t ? 1 : 0;
     }
     // caixa do conteúdo
     var x0 = w, y0 = h, x1 = -1, y1 = -1;
@@ -178,7 +179,7 @@
       }
       if (caminho === '/api/encomenda') {
         // nada é enviado: é só uma demonstração
-        return json({ numero: 'DEMO', url: BASE + '/demo-obrigado/' });
+        return json({ numero: 'DEMO', url: BASE + '/encomenda-enviada/' });
       }
     } catch (e) {
       return json({ erro: e.message || 'Erro na demonstração.' }, 400);

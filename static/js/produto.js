@@ -47,7 +47,7 @@
       el.dataset.i = i;
       var interior = '<span class="slot__n">' + (i + 1) + '</span>';
       if (s.estado === 'pronto') {
-        interior += '<img src="' + s.preview + '" alt="Stencil ' + (i + 1) + '">' +
+        interior += '<img src="' + Carrinho.esc(s.preview) + '" alt="Stencil ' + (i + 1) + '">' +
           '<button type="button" class="slot__x" data-remover aria-label="Remover imagem ' + (i + 1) + '">×</button>';
       } else if (s.estado === 'a-processar') {
         interior += '<span class="roda"></span>';
@@ -73,7 +73,7 @@
     });
     folhasEl.innerHTML = itens.map(function (f) {
       return '<button type="button" class="folha-mini' + (selecionado === f.chave ? ' is-sel' : '') + (f.img ? '' : ' is-vazia') +
-        '" data-folha="' + f.chave + '">' + (f.img ? '<img src="' + f.img + '" alt="">' : '') +
+        '" data-folha="' + f.chave + '">' + (f.img ? '<img src="' + Carrinho.esc(f.img) + '" alt="">' : '') +
         '<span>' + f.rotulo + '</span></button>';
     }).join('');
   }
@@ -274,7 +274,7 @@
       notas: ($('[data-notas]') || {}).value || ''
     });
     var falta = v.stencils - prontos.length;
-    Carrinho.aviso('Adicionado ao carrinho. ' + (falta > 0 ? 'As ' + falta + ' imagens em falta podes enviar depois por email. ' : '') +
+    Carrinho.aviso('Adicionado ao carrinho. ' + (falta > 0 ? 'As ' + falta + ' imagens em falta podes enviar depois pelo WhatsApp. ' : '') +
       '<a href="' + (window.BASE || '') + '/carrinho">Ver carrinho</a>');
   });
 

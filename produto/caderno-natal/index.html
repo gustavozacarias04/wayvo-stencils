@@ -6,18 +6,19 @@
   <title>Caderno de Natal · Wayvo Stencils</title>
   <meta name="description" content="Stencils para bolos e bolachas, feitos com os teus desenhos.">
   <meta name="theme-color" content="#fdf6ee">
-  <!-- Tipos de letra (Google Fonts). Antes de pôr online: alojar os ficheiros no próprio site (RGPD). -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,500..700,100,0;1,9..144,400..600,100,0&family=Nunito:wght@400;600;700;800&display=swap">
-  <link rel="stylesheet" href="/static/css/loja.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <!-- Tipos de letra alojados no próprio site (sem pedidos a terceiros) -->
+  <link rel="preload" href="/static/fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/static/fonts/nunito-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/static/css/fontes.css?v=1795358903">
+  <link rel="stylesheet" href="/static/css/loja.css?v=1795358903">
   <link rel="icon" type="image/png" sizes="32x32" href="/static/img/marca/favicon-32.png">
   <link rel="apple-touch-icon" href="/static/img/marca/favicon.png">
 </head>
 <body class="">
   <a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
-  <div class="demo-aviso">✨ Versão de demonstração — a loja ainda está a ser preparada e não aceita encomendas.</div>
-  <div class="anuncio">Portes grátis acima de 40,00 €<span class="anuncio__extra"><span aria-hidden="true">·</span> Feito por encomenda em Portugal</span></div>
+  <div class="anuncio">Encomendas por WhatsApp · pagamento MB WAY<span class="anuncio__extra"><span aria-hidden="true">·</span> Portes grátis acima de 40,00 €</span></div>
   <header class="topo">
     <div class="largura topo__in">
       <nav class="nav" aria-label="Principal">
@@ -194,18 +195,25 @@
           <ul>
             <li><a href="/#como-funciona">Como usar</a></li>
             <li><a href="/#perguntas">Perguntas frequentes</a></li>
-            <li><a href="mailto:ola@exemplo.pt">ola@exemplo.pt</a></li>
+            <li><a href="/termos/">Envios, devoluções e termos</a></li>
+            <li><a href="/privacidade/">Privacidade</a></li>
+            <li><a href="https://www.livroreclamacoes.pt" target="_blank" rel="noopener">Livro de Reclamações</a></li>
+            
+            
           </ul>
         </div>
       </div>
-      <p class="rodape__base">© 2026 Wayvo Stencils · Versão de demonstração.</p>
+      <p class="rodape__base">© 2026 Wayvo Stencils · Encomendas por WhatsApp, pagamento por MB WAY.</p>
     </div>
   </footer>
 
   <div class="aviso" role="status" aria-live="polite" data-aviso hidden></div>
-  <script>window.BASE = "";</script>
-  <script src="/static/js/demo.js"></script>
-  <script src="/static/js/carrinho.js"></script>
+  <script>
+    window.BASE = "";
+    window.LOJA_CFG = {"modo": "whatsapp", "nome": "Wayvo Stencils", "pagamento": "MB WAY", "whatsapp": ""};
+  </script>
+  <script src="/static/js/demo.js?v=1795358903"></script>
+  <script src="/static/js/carrinho.js?v=1795358903"></script>
   
 <script>
 (function () {
@@ -256,7 +264,7 @@
       if (capa.texto === j.texto) {
         capa.preview = j.preview;
         mini.hidden = false; mini.classList.remove('is-vazia');
-        mini.innerHTML = '<img src="' + j.preview + '" alt=""><span>Capa</span>';
+        mini.innerHTML = '<img src="' + Carrinho.esc(j.preview) + '" alt=""><span>Capa</span>';
         selecionar(mini, j.preview, 'Capa');
       }
     } catch (err) { Carrinho.aviso('Capa: ' + Carrinho.esc(err.message || 'erro')); }
