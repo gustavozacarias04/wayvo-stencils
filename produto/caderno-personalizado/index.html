@@ -10,9 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,500..700,100,0;1,9..144,400..600,100,0&family=Nunito:wght@400;600;700;800&display=swap">
-  <link rel="stylesheet" href="/wayvo-stencils/static/css/loja.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="/wayvo-stencils/static/img/marca/favicon-32.png">
-  <link rel="apple-touch-icon" href="/wayvo-stencils/static/img/marca/favicon.png">
+  <link rel="stylesheet" href="/static/css/loja.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/static/img/marca/favicon-32.png">
+  <link rel="apple-touch-icon" href="/static/img/marca/favicon.png">
 </head>
 <body class="">
   <a class="saltar" href="#conteudo">Saltar para o conteúdo</a>
@@ -21,16 +21,16 @@
   <header class="topo">
     <div class="largura topo__in">
       <nav class="nav" aria-label="Principal">
-        <a href="/wayvo-stencils/produto/caderno-natal">Natal</a>
-        <a href="/wayvo-stencils/produto/caderno-personalizado">Personalizados</a>
-        <a href="/wayvo-stencils/#como-funciona">Como usar</a>
+        <a href="/produto/caderno-natal">Natal</a>
+        <a href="/produto/caderno-personalizado">Personalizados</a>
+        <a href="/#como-funciona">Como usar</a>
       </nav>
-      <a class="logo" href="/wayvo-stencils/" aria-label="Wayvo Stencils — início">
-        <img src="/wayvo-stencils/static/img/marca/logo.svg" alt="Wayvo Stencils" width="150" height="48">
+      <a class="logo" href="/" aria-label="Wayvo Stencils — início">
+        <img src="/static/img/marca/logo.svg" alt="Wayvo Stencils" width="150" height="48">
       </a>
       <div class="topo__dir">
-        <a class="nav-link" href="/wayvo-stencils/#perguntas">Ajuda</a>
-        <a class="carrinho-link" href="/wayvo-stencils/carrinho" aria-label="Carrinho">
+        <a class="nav-link" href="/#perguntas">Ajuda</a>
+        <a class="carrinho-link" href="/carrinho" aria-label="Carrinho">
           <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" d="M5 8h14l-1.2 11.2a1.5 1.5 0 0 1-1.5 1.3H7.7a1.5 1.5 0 0 1-1.5-1.3L5 8Z"/><path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" d="M9 10V6.5a3 3 0 0 1 6 0V10"/></svg>
           <span>Carrinho</span>
           <span class="carrinho-n" data-carrinho-n hidden>0</span>
@@ -41,13 +41,13 @@
 
   <main id="conteudo">
 <div class="largura produto" data-produto>
-  <nav class="migalhas" aria-label="Estás em"><a href="/wayvo-stencils/">Início</a> / <span>Caderno de Stencils Personalizado</span></nav>
+  <nav class="migalhas" aria-label="Estás em"><a href="/">Início</a> / <span>Caderno de Stencils Personalizado</span></nav>
 
   <div class="produto__grid">
     <!-- visualizador -->
     <div class="visor">
       <div class="visor__palco" data-palco style="--tinta: var(--chocolate)">
-        <img class="visor__img" data-visor-img src="/wayvo-stencils/static/img/produto-caderno.png" alt="Caderno de Stencils Personalizado">
+        <img class="visor__img" data-visor-img src="/static/img/produto-caderno.png" alt="Caderno de Stencils Personalizado">
         <div class="visor__vazio" data-visor-vazio hidden>
           <p>Carrega uma imagem para veres aqui o teu stencil.</p>
         </div>
@@ -159,29 +159,29 @@
   </div>
 </div>
 
-<script type="application/json" id="dados-produto">{"capa": true, "exemplo": "/wayvo-stencils/static/img/produto-caderno.png", "formato": "A6", "handle": "caderno-personalizado", "modos": {"contorno": "Foto (contornos)", "linha": "Desenho de linha", "silhueta": "Silhueta"}, "titulo": "Caderno de Stencils Personalizado", "variantes": [{"formato": "A6", "id": "CAD-B06", "preco": 19.9, "stencils": 6, "titulo": "6 \u00b7 Bolachas"}, {"destaque": "Mais escolhido", "formato": "A6", "id": "CAD-B12", "preco": 32.9, "stencils": 12, "titulo": "12 \u00b7 Bolachas"}, {"formato": "A6", "id": "CAD-B18", "preco": 44.9, "stencils": 18, "titulo": "18 \u00b7 Bolachas"}, {"formato": "A5", "id": "CAD-06", "preco": 24.9, "stencils": 6, "titulo": "6 \u00b7 Bolos"}, {"formato": "A5", "id": "CAD-12", "preco": 39.9, "stencils": 12, "titulo": "12 \u00b7 Bolos"}, {"formato": "A5", "id": "CAD-18", "preco": 54.9, "stencils": 18, "titulo": "18 \u00b7 Bolos"}]}</script>
+<script type="application/json" id="dados-produto">{"capa": true, "exemplo": "/static/img/produto-caderno.png", "formato": "A6", "handle": "caderno-personalizado", "modos": {"contorno": "Foto (contornos)", "linha": "Desenho de linha", "silhueta": "Silhueta"}, "titulo": "Caderno de Stencils Personalizado", "variantes": [{"formato": "A6", "id": "CAD-B06", "preco": 19.9, "stencils": 6, "titulo": "6 \u00b7 Bolachas"}, {"destaque": "Mais escolhido", "formato": "A6", "id": "CAD-B12", "preco": 32.9, "stencils": 12, "titulo": "12 \u00b7 Bolachas"}, {"formato": "A6", "id": "CAD-B18", "preco": 44.9, "stencils": 18, "titulo": "18 \u00b7 Bolachas"}, {"formato": "A5", "id": "CAD-06", "preco": 24.9, "stencils": 6, "titulo": "6 \u00b7 Bolos"}, {"formato": "A5", "id": "CAD-12", "preco": 39.9, "stencils": 12, "titulo": "12 \u00b7 Bolos"}, {"formato": "A5", "id": "CAD-18", "preco": 54.9, "stencils": 18, "titulo": "18 \u00b7 Bolos"}]}</script>
 </main>
 
   <footer class="rodape ondas ondas--so-topo">
     <div class="largura">
       <div class="rodape__grid">
         <div class="rodape__marca">
-          <img class="rodape__logo" src="/wayvo-stencils/static/img/marca/logo-branco.svg" alt="Wayvo Stencils" width="170" height="54">
+          <img class="rodape__logo" src="/static/img/marca/logo-branco.svg" alt="Wayvo Stencils" width="170" height="54">
           <p>Stencils para bolos e bolachas, desenhados e impressos por encomenda em Portugal.</p>
         </div>
         <div>
           <h2 class="rodape__titulo">Loja</h2>
           <ul>
-            <li><a href="/wayvo-stencils/produto/caderno-natal">Caderno de Natal</a></li>
-            <li><a href="/wayvo-stencils/produto/caderno-personalizado">Caderno personalizado</a></li>
-            <li><a href="/wayvo-stencils/produto/stencil-personalizado">Stencil avulso</a></li>
+            <li><a href="/produto/caderno-natal">Caderno de Natal</a></li>
+            <li><a href="/produto/caderno-personalizado">Caderno personalizado</a></li>
+            <li><a href="/produto/stencil-personalizado">Stencil avulso</a></li>
           </ul>
         </div>
         <div>
           <h2 class="rodape__titulo">Ajuda</h2>
           <ul>
-            <li><a href="/wayvo-stencils/#como-funciona">Como usar</a></li>
-            <li><a href="/wayvo-stencils/#perguntas">Perguntas frequentes</a></li>
+            <li><a href="/#como-funciona">Como usar</a></li>
+            <li><a href="/#perguntas">Perguntas frequentes</a></li>
             <li><a href="mailto:ola@exemplo.pt">ola@exemplo.pt</a></li>
           </ul>
         </div>
@@ -191,9 +191,9 @@
   </footer>
 
   <div class="aviso" role="status" aria-live="polite" data-aviso hidden></div>
-  <script>window.BASE = "/wayvo-stencils";</script>
-  <script src="/wayvo-stencils/static/js/demo.js"></script>
-  <script src="/wayvo-stencils/static/js/carrinho.js"></script>
-  <script src="/wayvo-stencils/static/js/produto.js"></script>
+  <script>window.BASE = "";</script>
+  <script src="/static/js/demo.js"></script>
+  <script src="/static/js/carrinho.js"></script>
+  <script src="/static/js/produto.js"></script>
 </body>
 </html>
