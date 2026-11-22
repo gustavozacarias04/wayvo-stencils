@@ -21,6 +21,8 @@
     var n = ler().reduce(function (a, i) { return a + i.quantidade; }, 0);
     document.querySelectorAll('[data-carrinho-n]').forEach(function (el) {
       el.textContent = n; el.hidden = n === 0;
+      var link = el.closest('a');
+      if (link) link.setAttribute('aria-label', n ? 'Carrinho, ' + n + (n === 1 ? ' artigo' : ' artigos') : 'Carrinho vazio');
     });
   }
   function aviso(txt) {

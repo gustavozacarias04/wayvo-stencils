@@ -19,7 +19,7 @@
   <meta property="og:image:alt" content="Wayvo Stencils — stencils para bolos e bolachas">
   <meta name="twitter:card" content="summary_large_image">
   
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "brand": {"@type": "Brand", "name": "Wayvo Stencils"}, "description": "Um stencil com o teu desenho ou log\u00f3tipo, para bolos ou bolachas.", "image": "https://www.wayvostencils.store/static/img/produto-avulso.png", "name": "Stencil Personalizado", "offers": {"@type": "AggregateOffer", "availability": "https://schema.org/PreOrder", "highPrice": "6.90", "lowPrice": "4.90", "offerCount": 2, "priceCurrency": "EUR", "url": "https://www.wayvostencils.store/produto/stencil-personalizado/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "brand": {"@type": "Brand", "name": "Wayvo Stencils"}, "description": "Um stencil com o teu desenho ou log\u00f3tipo, para bolos ou bolachas.", "image": "https://www.wayvostencils.store/static/img/produto-avulso.webp", "name": "Stencil Personalizado", "offers": {"@type": "AggregateOffer", "availability": "https://schema.org/PreOrder", "highPrice": "6.90", "lowPrice": "4.90", "offerCount": 2, "priceCurrency": "EUR", "url": "https://www.wayvostencils.store/produto/stencil-personalizado/"}}</script>
 
   <meta name="theme-color" content="#fdf6ee">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-src 'none'; upgrade-insecure-requests">
@@ -27,8 +27,8 @@
   <!-- Tipos de letra alojados no próprio site (sem pedidos a terceiros) -->
   <link rel="preload" href="/static/fonts/fraunces-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/static/fonts/nunito-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/static/css/fontes.css?v=1795360117">
-  <link rel="stylesheet" href="/static/css/loja.css?v=1795360117">
+  <link rel="stylesheet" href="/static/css/fontes.css?v=1795372669">
+  <link rel="stylesheet" href="/static/css/loja.css?v=1795372669">
   <link rel="icon" type="image/png" sizes="32x32" href="/static/img/marca/favicon-32.png">
   <link rel="apple-touch-icon" href="/static/img/marca/favicon.png">
 </head>
@@ -64,7 +64,7 @@
     <!-- visualizador -->
     <div class="visor">
       <div class="visor__palco" data-palco style="--tinta: var(--chocolate)">
-        <img class="visor__img" data-visor-img src="/static/img/produto-avulso.png" alt="Stencil Personalizado">
+        <img class="visor__img" data-visor-img src="/static/img/produto-avulso.webp" alt="Stencil Personalizado">
         <div class="visor__vazio" data-visor-vazio hidden>
           <p>Carrega uma imagem para veres aqui o teu stencil.</p>
         </div>
@@ -72,7 +72,7 @@
       </div>
       <div class="visor__barra">
         <span class="visor__legenda" data-visor-legenda>Exemplo</span>
-        <div class="tintas" role="radiogroup" aria-label="Ver com cobertura">
+        <div class="tintas" role="group" aria-label="Ver com cobertura">
           <span class="pequeno">Ver com:</span>
           <button type="button" class="tinta is-on" style="--c:var(--chocolate)" data-tinta="var(--chocolate)" title="Cacau / chocolate" aria-label="Cacau" aria-pressed="true"></button>
           <button type="button" class="tinta" style="--c:var(--morango)" data-tinta="var(--morango)" title="Glacé de morango" aria-label="Morango" aria-pressed="false"></button>
@@ -81,7 +81,7 @@
         </div>
       </div>
       <div class="folhas" data-folhas aria-label="Folhas do teu caderno"></div>
-      <p class="pequeno visor__info" data-visor-info></p>
+      <p class="pequeno visor__info" data-visor-info aria-live="polite"></p>
     </div>
 
     <!-- formulário -->
@@ -150,7 +150,7 @@
   </div>
 </div>
 
-<script type="application/json" id="dados-produto">{"capa": false, "exemplo": "/static/img/produto-avulso.png", "formato": "A6", "handle": "stencil-personalizado", "modos": {"contorno": "Foto (contornos)", "linha": "Desenho de linha", "silhueta": "Silhueta"}, "titulo": "Stencil Personalizado", "variantes": [{"formato": "A6", "id": "STN-A6", "preco": 4.9, "stencils": 1, "subtitulo": "folha 14,8 \u00d7 10,5 cm", "titulo": "Bolacha"}, {"formato": "A5", "id": "STN-A5", "preco": 6.9, "stencils": 1, "subtitulo": "folha 21 \u00d7 14,8 cm", "titulo": "Bolo"}]}</script>
+<script type="application/json" id="dados-produto">{"capa": false, "exemplo": "/static/img/produto-avulso.webp", "formato": "A6", "handle": "stencil-personalizado", "modos": {"contorno": "Foto (contornos)", "linha": "Desenho de linha", "silhueta": "Silhueta"}, "titulo": "Stencil Personalizado", "variantes": [{"formato": "A6", "id": "STN-A6", "preco": 4.9, "stencils": 1, "subtitulo": "folha 14,8 \u00d7 10,5 cm", "titulo": "Bolacha"}, {"formato": "A5", "id": "STN-A5", "preco": 6.9, "stencils": 1, "subtitulo": "folha 21 \u00d7 14,8 cm", "titulo": "Bolo"}]}</script>
 </main>
 
   <footer class="rodape ondas ondas--so-topo">
@@ -190,8 +190,8 @@
     window.BASE = "";
     window.LOJA_CFG = {"modo": "whatsapp", "nome": "Wayvo Stencils", "pagamento": "MB WAY", "whatsapp": ""};
   </script>
-  <script src="/static/js/demo.js?v=1795360117"></script>
-  <script src="/static/js/carrinho.js?v=1795360117"></script>
-  <script src="/static/js/produto.js?v=1795360117"></script>
+  <script src="/static/js/demo.js?v=1795372669"></script>
+  <script src="/static/js/carrinho.js?v=1795372669"></script>
+  <script src="/static/js/produto.js?v=1795372669"></script>
 </body>
 </html>
